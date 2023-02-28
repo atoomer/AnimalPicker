@@ -8,22 +8,22 @@ public class AnimalPicker {
 
     public static void main(String[]args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("What would you like to see: a cat or a dog? ");
-        String animal = scan.next();
-    
-        if (animal.equalsIgnoreCase(cat)){
-            System.out.println("CAT ASCII ART HERE");
+        boolean valid = false;
+        while (valid == false){
+            System.out.println("What would you like to see: a cat or a dog? ");
+            String animal = scan.next();
+            if (animal.equalsIgnoreCase(cat)){
+                System.out.println("CAT ASCII ART HERE");
+                valid = true;
+            }
+            else if(animal.equalsIgnoreCase(dog)){
+                System.out.println("DOG ASCII ART HERE");
+                valid = true;
+            }
+            else{
+                System.out.println("Error: Invalid input, try again.");
+                valid = false;
+            }
         }
-        else if(animal.equalsIgnoreCase(dog)){
-            System.out.println("DOG ASCII ART HERE");
-        }
-        else{
-            System.out.println("Error: Invalid Input.");
-        }
-        
-        
     }
-   
-    
-
 }
