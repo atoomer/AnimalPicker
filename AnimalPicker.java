@@ -11,14 +11,14 @@ public class AnimalPicker {
         System.out.println("What would you like to see: a cat or a dog? ");
         String animal = scan.next();
     
-        if (animal.equals(cat)){
+        if (animal.equalsIgnoreCase(cat)){
             System.out.println("CAT ASCII ART HERE");
         }
-        else if(animal.equals(dog)){
+        else if(animal.equalsIgnoreCase(dog)){
             System.out.println("DOG ASCII ART HERE");
         }
         else{
-            System.out.println("huh");
+            System.out.println("Error: Invalid Input.");
         }
         
         
