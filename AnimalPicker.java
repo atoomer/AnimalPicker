@@ -13,11 +13,11 @@ public class AnimalPicker {
             System.out.println("What would you like to see: a cat or a dog? ");
             String animal = scan.next();
             if (animal.equalsIgnoreCase(cat)){
-                System.out.println("CAT ASCII ART HERE");
+                System.out.println("      /\\_/\\\n /\\  / o o \\\n//\\\\ \\~(*)~/\n`  \\/   ^ /\n   | \\|| ||\n   \\ \'|| ||\n    \\)()-())");
                 valid = true;
             }
             else if(animal.equalsIgnoreCase(dog)){
-                System.out.println("DOG ASCII ART HERE");
+                System.out.println("         __\n        /  \\\n       / ..|\\\n      (_\\  |_)\n      /  \\@\'\n     /     \\\n _  /  `   |\n\\\\/  \\  | _\\\n \\   /_ || \\\\_\n  \\____)|_) \\_)");
                 valid = true;
             }
             else{
